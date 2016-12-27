@@ -80,7 +80,14 @@ GENERAL
 
 .gallery {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+}
+
+.gallery figure {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
 }
 
 .gallery img {
@@ -91,7 +98,7 @@ GENERAL
   padding: 5px;
 }
 
-.gallery img.u-image {
+img.u-image {
   width: 28px;
   height: 28px;
   border: 0;
@@ -103,16 +110,9 @@ span.user {
   font-weight: bolder;
 }
 
-.gallery figure {
-  display: flex;
-  flex-direction: column;
-}
-
 .gallery figcaption {
-  margin: 10px 0 5px;
   border-bottom: 1px solid LightGray;
-  height: 60px;
-  width: 280px;
+  padding: 10px;
 }
 
 .gallery div.user-info {
@@ -121,9 +121,8 @@ span.user {
   align-items: center;
 }
 
-.gallery p {
+p {
   margin: 0;
-  padding: 2px;
 }
 
 /*******************
@@ -135,6 +134,10 @@ footer {
   width: 100%;
   margin: 10px;
   color: #777;
+}
+
+h1 {
+  color:
 }
 
 footer ul {
